@@ -36,7 +36,7 @@ public class FirstServlet extends HttpServlet
 		String qry="insert into muzeeb.details values(?,?,?)";
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			con=DriverManager.getConnection("jdbc:mysql://localhost:3306?user=root&password=muzeeb");
+			con=DriverManager.getConnection("jdbc:mysql://localhost:3306?user=root&password=*****");
 			pstmt=con.prepareStatement(qry);
 			
 			//SET VALUES FOR PLACEHOLDER
